@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { fetchFact } from '../../api/index';
+import React from 'react';
 
-const Fact: React.FC = () => {
-  const [fact, setFact] = useState('');
-  useEffect(() => {
-    fetchFact().then(({ fact }) => {
-      setFact(fact);
-    });
-  }, []);
+interface IProps {
+  factText: string;
+}
+
+const Fact: React.FC<IProps> = ({ factText }: IProps) => {
   return (
     <div>
-      <p>{fact}</p>
+      <p>{factText}</p>
     </div>
   );
 };
