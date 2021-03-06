@@ -16,9 +16,8 @@ const App: React.FC = () => {
   return (
     <div className='center'>
       <h1>Show me a random cat fact!</h1>
-      {!clicked && <Button text={'Show me!'} clicked={clickedButton} />}
-      {clicked && <Button text={'Another one'} clicked={clickedButton} />}
-      {clicked && <Fact factText={fact} />}
+      <Button text={!clicked ? 'Show me!' : 'Another one'} clicked={clickedButton} />
+      <Fact factText={fact} />
     </div>
   );
 };
