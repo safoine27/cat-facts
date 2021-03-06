@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+.center{
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}

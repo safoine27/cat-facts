@@ -1,0 +1,11 @@
+button{
+    color: black;
+    border-radius: 20%;
+    border: 1px solid #f4e132;
+    padding: 20px;
+    background: #bdf1fc ;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 80%;
+}

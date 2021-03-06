@@ -5,6 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./assets/img/cat-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f4e132;
+  background-position-y: bottom;
+  background-position-x: center;
+  width: 100vw;
+  height: 98vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 798px){
+  body{
+    height: 90vh;
+  }
 }
 
 code {
